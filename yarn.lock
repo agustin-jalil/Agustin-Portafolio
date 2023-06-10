@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@babel/runtime@^7.21.0":
+  version "7.21.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.21.5.tgz#8492dddda9644ae3bda3b45eabe87382caee7200"
+  integrity sha512-8jI69toZqqcsnqGGqwGS4Qb1VwLOEp4hz+CXPywcvjs60u3B4Pom/U/7rm4W8tMOYEB+E9wgD0mW1l3r8qlI9Q==
+  dependencies:
+    regenerator-runtime "^0.13.11"
+
 "@discoveryjs/json-ext@^0.5.0":
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.7.tgz#1d572bfbbe14b7704e0ba0f39b74815b84870d70"
@@ -69,6 +76,11 @@
   dependencies:
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
+
+"@kurkle/color@^0.3.0":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@kurkle/color/-/color-0.3.2.tgz#5acd38242e8bde4f9986e7913c8fdf49d3aa199f"
+  integrity sha512-fuscdXJ9G1qb7W8VdHi+IwRqij3lBkosAm4ydQtEmbY58OzHXqQhvlxqEkoz0yssNVn38bcpRWgA9PP+OGoisw==
 
 "@popperjs/core@^2.11.7":
   version "2.11.7"
@@ -307,6 +319,32 @@ caniuse-lite@^1.0.30001449:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001482.tgz#8b3fad73dc35b2674a5c96df2d4f9f1c561435de"
   integrity sha512-F1ZInsg53cegyjroxLNW9DmrEQ1SuGRTO1QlpA0o2/6OpQ0gFeDRoq1yFmnr8Sakn9qwwt9DmbxHB6w167OSuQ==
 
+chart.js@4, chart.js@^4.1.1, chart.js@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-4.3.0.tgz#ac363030ab3fec572850d2d872956f32a46326a1"
+  integrity sha512-ynG0E79xGfMaV2xAHdbhwiPLczxnNNnasrmPEXriXsPJGjmhOBYzFVEsB65w2qMDz+CaBJJuJD0inE/ab/h36g==
+  dependencies:
+    "@kurkle/color" "^0.3.0"
+
+chartjs-adapter-date-fns@>=3:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/chartjs-adapter-date-fns/-/chartjs-adapter-date-fns-3.0.0.tgz#c25f63c7f317c1f96f9a7c44bd45eeedb8a478e5"
+  integrity sha512-Rs3iEB3Q5pJ973J93OBTpnP7qoGwvq3nUnoMdtxO+9aoJof7UFcRbWcIDteXuYd1fgAvct/32T9qaLyLuZVwCg==
+
+chartkick@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/chartkick/-/chartkick-5.0.1.tgz#f557ff8560f974343dc65c7fc34ce1e8326d8ee7"
+  integrity sha512-4F3tWI3eBQgnjCYZIZ+fHOaJuNyxeyhDE2Tm+voOWB19hDjSJceys/spzN52DOn8bWepNESGXvPVTGU1jeFsbA==
+  optionalDependencies:
+    chart.js "4"
+    chartjs-adapter-date-fns ">=3"
+    date-fns ">=2"
+
+charts.css@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/charts.css/-/charts.css-0.9.0.tgz#df0da443226d549b2ab36ed6532fa04571c59916"
+  integrity sha512-gOqyyRZGifTNCdyVdMwO6/9+5sHyue1csqOrCr7V/FwzuAiaj+gGL6DX7LGPXCHIQBumsM5/mKiIe/BadwzvzA==
+
 chrome-trace-event@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/chrome-trace-event/-/chrome-trace-event-1.0.3.tgz#1015eced4741e15d06664a957dbbf50d041e26ac"
@@ -344,6 +382,13 @@ cross-spawn@^7.0.3:
     path-key "^3.1.0"
     shebang-command "^2.0.0"
     which "^2.0.1"
+
+date-fns@>=2:
+  version "2.30.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.30.0.tgz#f367e644839ff57894ec6ac480de40cae4b0f4d0"
+  integrity sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==
+  dependencies:
+    "@babel/runtime" "^7.21.0"
 
 electron-to-chromium@^1.4.284:
   version "1.4.379"
@@ -526,6 +571,11 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
+magic.css@^1.4.8:
+  version "1.4.8"
+  resolved "https://registry.yarnpkg.com/magic.css/-/magic.css-1.4.8.tgz#3ef331fa925291a0606e924093a5cf42f31402d1"
+  integrity sha512-qL9mQf80fc61Z6p90FqWSeIEe3QBPyUa+dFqaKkJ9peNwv/1lsz16VSRUoeATgMvogdSIKQcFyRtoWu0pjHePw==
+
 merge-stream@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/merge-stream/-/merge-stream-2.0.0.tgz#52823629a14dd00c9770fb6ad47dc6310f2c1f60"
@@ -618,6 +668,11 @@ rechoir@^0.8.0:
   dependencies:
     resolve "^1.20.0"
 
+regenerator-runtime@^0.13.11:
+  version "0.13.11"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
+  integrity sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==
+
 resolve-cwd@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/resolve-cwd/-/resolve-cwd-3.0.0.tgz#0f0075f1bb2544766cf73ba6a6e2adfebcb13f2d"
@@ -692,6 +747,13 @@ source-map@^0.6.0:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
+stimulus-chartjs@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/stimulus-chartjs/-/stimulus-chartjs-5.0.0.tgz#0f7d6e40358328ea8bf16085c188b166f7a85cfc"
+  integrity sha512-3w5pHaQ+W2Zw5od+Dkh636YkHpWUp6xzgh4p9a0pQ29rVoUJHPqkeUU52nNsCohqarnjiXl3W3EnxTA5lgV8pQ==
+  dependencies:
+    chart.js "^4.1.1"
+
 supports-color@^8.0.0:
   version "8.1.1"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-8.1.1.tgz#cd6fc17e28500cff56c1b86c0a7fd4a54a73005c"
@@ -744,6 +806,11 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
+
+vue-chartjs@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/vue-chartjs/-/vue-chartjs-5.2.0.tgz#3d0076ccf8016d1bf8fab5ccd837e7fb81005ded"
+  integrity sha512-d3zpKmGZr2OWHQ1xmxBcAn5ShTG917+/UCLaSpaCDDqT0U7DBsvFzTs69ZnHCgKoXT55GZDW8YEj9Av+dlONLA==
 
 watchpack@^2.4.0:
   version "2.4.0"
